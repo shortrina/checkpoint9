@@ -1,0 +1,8 @@
+bool attach_to_shelf # If 'True', the service will do the final approach
+                     # it will publish the cart_frame transform
+                     # it will move the robot underneath the shelf and it will lift it
+                     # If 'False', the robot will only publish the cart_frame transform.
+                     # but it will not do the final approach
+---
+bool complete # It will be 'False', if the laser only detects 1 shelf leg or none. 
+              # It will return 'True', if the final approach is successful
